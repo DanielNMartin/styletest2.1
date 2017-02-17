@@ -1,0 +1,321 @@
+.header {
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.site-logo {
+    float: left;
+}
+
+.site-logo a {
+    display: block;
+    float: left;
+    margin-left: 2.5em;
+}
+
+.site-logo a:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-logo:hover {
+    color: #6a7b8d;
+    opacity: 0.5;
+}
+
+.companytitle {
+    display: inline-block;
+    color: black;
+    margin-left: 1em;
+    margin-top: 15px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.companytitle h1 {
+    font-size: 2em;
+}
+
+.medialinks {
+    float: right;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.medialinks .ul {
+    display: inline-block;
+    margin: 23px;
+}
+
+.medialinks .facebook {
+    float: left;
+}
+
+.medialinks .facebook:hover img {
+    opacity: 0.5;
+}
+
+.medialinks .twitter {
+    float: left;
+}
+
+.medialinks .twitter:hover img {
+    opacity: 0.5;
+}
+
+.medialinks .google_plus {
+    float: right;
+}
+
+.medialinks .google_plus:hover img {
+    opacity: 0.5;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    padding: 5px 40px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar ul li:hover {
+    opacity: 0.4;
+}
+
+.navbar ul li:hover a {
+    color: black;
+}
+
+.navbar {
+    margin-top: -30px;
+    margin-left: 3em;
+    margin-right: 2em;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    width: 85%;
+    background-color: #E8E8E8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 0.1px;
+    border-style: solid;
+}
+
+.navbar li {
+    width: auto;
+}
+
+.li {
+    font: black;
+}
+
+.main-text {
+    width: 70%;
+    float: left;
+    padding: 1em;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-left: -1.5em;
+}
+
+.main-text:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.side-list {
+    float: right;
+    margin-right: 55px;
+    padding-bottom: 5px;
+    /*  &:after {
+        content: "";
+        display: table;
+        clear: both; */
+}
+
+.side-list ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.side-list li:hover {
+    opacity: 0.4;
+}
+
+.p {
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 22px;
+    clear: both;
+}
+
+.bottom-text {
+    width: 70%;
+    float: left;
+    padding: 1em;
+    padding-top: 1px;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-left: -1.5em;
+}
+
+.side-list_title {
+    margin-bottom: -10px;
+    margin-top: 32px;
+}
+
+.left-content h1 {
+    margin-left: 2em;
+    margin-bottom: 1px;
+    margin-top: 1.3em;
+}
+
+.left-content p {
+    margin-left: 4em;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.left-content img {
+    margin-left: 4em;
+}
+
+.box1 {
+    margin-top: 2.5em;
+}
+
+.box1:hover {
+    opacity: 0.4;
+}
+
+h2 {
+    margin-bottom: 0.3em;
+}
+
+.box2:hover {
+    opacity: 0.4;
+}
+
+.box2 h2 {
+    margin-bottom: 0.3em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*********************
+        MEDIA QUERIES
+        *******************/
+
+
+/* Small Devices, Phones/Phablets */
+
+@media screen and (max-width: 425px) {
+    .medialinks {
+        display: none;
+    }
+    .right-content {
+        display: none;
+    }
+    .logo {
+        width: auto;
+        margin-left: 0;
+    }
+    .companytitle {
+        width: auto;
+    }
+    .navbar {
+        width: auto;
+        margin: auto;
+    }
+    .main-article__header_title {
+        font-size: 23px;
+        width: auto;
+        margin-left: 0;
+        position: relative;
+        text-align: center;
+    }
+    .main {
+        width: auto;
+        margin: auto;
+    }
+    .main-text {
+        margin-left: 4em;
+        width: auto;
+        position: static;
+    }
+    .main-text p {
+        margin-left: 0;
+    }
+    .bottom-text {
+        margin: auto;
+        width: auto;
+    }
+    .navbar {
+        position: relative;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+
+/* Extra Small Devices, Phones */
+
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.header {
+    color: black;
+    min-height: 150px;
+}
+
+.main {
+    /*   border: 2px solid blue; */
+    min-height: 900px;
+}
+
+.left-content {
+    width: 70%;
+    /*    border: 2px solid green;  */
+    min-height: inherit;
+    float: left;
+}
+
+.right-content {
+    min-height: inherit;
+    /*   border: 2px solid brown;  */
+    width: 29%;
+    float: right;
+}
+
+.navbar {
+    color: black;
+    text-align: center;
+}

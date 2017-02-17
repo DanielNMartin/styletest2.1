@@ -1,0 +1,273 @@
+        .header {
+            display: inline-block;
+            margin-top: 5px;
+            width: 100%;
+        }
+        
+        .site-logo {
+            float: left;
+            a {
+                display: block;
+                float: left;
+                margin-left: 2.5em;
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            }
+            &:hover {
+                color: darken(lightslategray, 5%);
+                opacity: 0.5;
+            }
+        }
+        
+        .companytitle {
+            display: inline-block;
+            color: black;
+            margin-left: 1em;
+            margin-top: 15px;
+            vertical-align: middle;
+            font-size: 18px;
+            h1 {
+                font-size: 2em;
+            }
+        }
+        
+        .medialinks {
+            float: right;
+            display: inline-block;
+            margin-right: 70px;
+            .ul {
+                display: inline-block;
+                margin: 23px;
+            }
+            .facebook {
+                float: left;
+                &:hover {
+                    img {
+                        opacity: 0.5;
+                    }
+                }
+            }
+            .twitter {
+                float: left;
+                &:hover {
+                    img {
+                        opacity: 0.5;
+                    }
+                }
+            }
+            .google_plus {
+                float: right;
+                &:hover {
+                    img {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+        
+        .navbar {
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline;
+                    a {
+                        padding: 5px 40px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        opacity: 0.4;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .navbar {
+            margin-top: -30px;
+            margin-left: 3em;
+            margin-right: 2em;
+            color: black;
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            width: 85%;
+            background-color: #E8E8E8;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-width: 0.1px;
+            border-style: solid;
+            li {
+                width: auto;
+            }
+        }
+        
+        .li {
+            font: black;
+        }
+        
+        .main-text {
+            width: 70%;
+            float: left;
+            padding: 1em;
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1.4;
+            margin-left: -1.5em;
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        
+        .side-list {
+            float: right;
+            margin-right: 55px;
+            padding-bottom: 5px;
+            ul {
+                list-style: disc;
+                padding-left: 18px;
+            }
+            /*  &:after {
+        content: "";
+        display: table;
+        clear: both; */
+            li {
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+        }
+        
+        .p {
+            font-size: 1em;
+            display: inline-block;
+            margin-top: 22px;
+            clear: both;
+        }
+        
+        .bottom-text {
+            width: 70%;
+            float: left;
+            padding: 1em;
+            padding-top: 1px;
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1.4;
+            margin-left: -1.5em;
+        }
+        
+        .side-list_title {
+            margin-bottom: -10px;
+            margin-top: 32px;
+        }
+        
+        .left-content {
+            h1 {
+                margin-left: 2em;
+                margin-bottom: 1px;
+                margin-top: 1.3em;
+            }
+            p {
+                margin-left: 4em;
+                margin-bottom: 2px;
+                margin-top: 2px;
+            }
+            img {
+                margin-left: 4em;
+            }
+        }
+        
+        .box1 {
+            &:hover {
+                opacity: 0.4;
+            }
+            margin-top: 2.5em;
+        }
+        
+        h2 {
+            margin-bottom: 0.3em;
+        }
+        
+        .box2 {
+            &:hover {
+                opacity: 0.4;
+            }
+            h2 {
+                margin-bottom: 0.3em;
+            }
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        /*********************
+        MEDIA QUERIES
+        *******************/
+        /* Small Devices, Phones/Phablets */
+        
+        @media screen and (max-width: 425px) {
+            .medialinks {
+                display: none;
+            }
+            .right-content {
+                display: none;
+            }
+            .logo {
+                width: auto;
+                margin-left: 0;
+            }
+            .companytitle {
+                width: auto;
+            }
+            .navbar {
+                width: auto;
+                margin: auto;
+            }
+            .main-article__header_title {
+                font-size: 23px;
+                width: auto;
+                margin-left: 0;
+                position: relative;
+                text-align: center;
+            }
+            .main {
+                width: auto;
+                margin: auto;
+            }
+            .main-text {
+                margin-left: 4em;
+                width: auto;
+                position: static;
+                p {
+                    margin-left: 0;
+                }
+            }
+            .bottom-text {
+                margin: auto;
+                width: auto;
+            }
+            .navbar {
+                position: relative;
+            }
+        }
+        /* Custom, iPhone Retina */
+        
+        @media only screen and (min-width: 320px) {}
+        /* Extra Small Devices, Phones */
+        
+        @media only screen and (min-width: 480px) {}
+        /* Small Devices, Tablets */
+        
+        @media only screen and (min-width: 768px) {}
+        /* Medium Devices, Desktops */
+        
+        @media only screen and (min-width: 992px) {}
